@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "HankenGrotesk"; /* Specify your font's name */
+  src: local("HankenGrotesk"),
+    url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype"); /* Use the full file path to your font file */
+  font-weight: normal; /* Specify the font weight */
+  font-style: normal; /* Specify the font style */
+}
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+  --Font-size: 18; /* Numeric value for font size */
+  --Weights: 500, 700, 800; /* Font weight values */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "HankenGrotesk", sans-serif;
+}
+.card{
+    min-width: 320px;
+    width:100%;
+    height: auto !important;
+    padding: 50px !important;
+    padding-top: 0px !important;
+}
+.card1{
+background-color: var(--Light-royal-blue);
+border-radius: 25px;
+}
+.head1{
+    color:white;
+    font-size: 25px;
+   
+}
+.head1-parent {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.circle-div{
+    width:200px;
+    height: 200px;
+    background-color: var(--Cobalt-blue);
+    background: linear-gradient(to top,transparent, var(--Cobalt-blue));
+
+    border-radius: 50%;
+  
+}
+.mark-text{
+    color: white;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.mark-text2{
+    color: white;
+    font-size: 17px;
+    font-weight: 900;
+}
+.head2{
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+}
+.p1{
+    color:var(--White);
+    font-size: 16px;
+
+}
+.card2{
+    border: 0px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.card-head2{
+  color: black;
+  font-size: 30px;
+  font-weight: 900;
+}
+.react-bg {
+
+  background-color: #FFF6F5
+
+}
+.react-bg .result-text{
+  color: #E67570;
+  color: var(--Light-red);
+  font-size: 18px;
+}
+
+.total-text-mark{
+  opacity: .5;
+  font-weight: 900;
+}
+.comn-box {
+  padding: 15px;
+  border-radius: 13px;
+
+
+}
+.Memory-bg{
+  background-color: #FFFBF2
+
+} 
+
+.Memory-bg .result-text{
+  color: var(--Orangey-yellow);
+  font-size: 18px;
+}
+.verbal-bg{
+  background-color: #F2FBFA
+}
+
+.verbal-bg .result-text{
+  color:var(--Green-teal);
+  font-size: 18px;
+}
+
+.visual-bg{
+  background-color: #F3F3FD
+}
+.visual-bg .result-text{
+  color: var(--Light-royal-blue);
+  font-size: 18px;
+}
+.btn-bg{
+  background: #303B59;
+  border-radius: 15px;
+  color: white;
+}
+@media (min-width: 768px) {
+
+  .centered-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   width:auto;
+   height: auto;
+  }
+}
+@media (max-width: 767px) {
+  /* Your CSS rules for mobile devices or small screens */
+  
+.centered-div {
+  position: absolute;
+  
+  height: auto;
+}
+}
+
+.gradient-overlay {
+  position: relative;
+}
+
+.gradient-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background:linear-gradient(to top, rgb(106 97 97 / 50%), rgba(255, 255, 255, 0));
+  pointer-events: none; /* Allow interaction with the underlying content */
+}
+.great-text,.mark-text{
+  z-index: 99999;
+}
+.mark-text2 {
+  opacity: .5;
+}
